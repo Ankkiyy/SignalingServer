@@ -7,6 +7,8 @@ from typing import Any, Dict
 
 import socketio
 import uvicorn
+import dotenv
+PORT = dotenv.get("PORT", 8000)
 
 LOGGER = logging.getLogger("signaling_server")
 
